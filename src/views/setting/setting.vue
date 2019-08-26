@@ -1,5 +1,5 @@
 <template>
   <div>
-    user
+    系统设置
   </div>
 </template>

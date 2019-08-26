@@ -1,0 +1,54 @@
+.el-container {
+  height: 100%;
+  background: #f9f9f9;
+}
+/* 撑满整个屏幕 */
+.aside {
+  height: 100%;
+  background-color: #304156;
+}
+.el-menu{
+  border: none;
+  background-color: #304156;
+}
+.el-menu:not(.el-menu--collapse){
+  width: 220px;
+}
+.el-header {
+  padding: 0 4px;
+  height: 50px !important;
+  line-height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+/* 配置sidebar标题颜色 */
+.el-submenu__title {
+  color: #efefef !important;
+}
+/* 子标题字体颜色 */
+.el-menu-item {
+  color: #eee;
+}
+/* 设置sidebar字体图标颜色*/
+.el-submenu__title i,
+.el-menu-item i {
+  color: #fefefe;
+  font-size: 20px; 
+}
+/* 配置下拉菜单背景颜色 */
+.el-menu--inline {
+  background-color: #1f2d3d;
+}
+/* 配置sidebar  hover */
+.el-submenu__title:hover,
+.el-menu-item:hover,
+.el-menu-item:focus,
+.el-menu-item:active {
+  background-color: rgba(209, 214, 221, 0.1) !important;
+}
+/* 下拉菜单hover背景颜色 */
+.el-submenu .el-menu-item:hover,
+.el-submenu .el-menu-item:focus,
+.el-submenu .el-menu-item:active {
+  background-color: hsl(209, 100%, 8%) !important;
+}
