@@ -21,27 +21,8 @@ axios.interceptors.request.use(
 // http response 拦截器
 axios.interceptors.response.use(
   response => {
-    if (response.status === 200) {
-      // Login Info Expired 登录信息已经过期
-      switch (response.data) {
-        case 'PleaseLogin':
-          Message({
-            message: '登录异常退出了，请重新登录',
-            type: 'error'
-          })
-          sessionStorage.clear()
-          Router.push({ path: '/login' })
-          break
-        case 'LoginInfoExpired':
-          Message({
-            message: '登录信息已经过期，请重新登录',
-            type: 'error'
-          })
-          sessionStorage.clear()
-          Router.push({ path: '/login' })
-          break
-      }
-    }
+    // if (response.status === 200) {
+    // }
     return response
   },
   error => {

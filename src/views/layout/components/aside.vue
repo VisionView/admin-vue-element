@@ -33,8 +33,9 @@ export default {
   },
   methods: {
     getPath () {
-      let path = this.$route.fullPath
-      this.asideActive = path.split('/')[1]
+      let path = this.$route.path
+      console.log(path)
+      this.asideActive = path
     }
   },
   mounted () {
