@@ -1,5 +1,5 @@
 // import Main from '@/views/common/main.vue'
-// 其他路由不在sidebar显示
+// 其他路由,不在sidebar显示
 export default [
   {
     path: '/home',

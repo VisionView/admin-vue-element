@@ -41,6 +41,11 @@ export default {
   mounted () {
     this.getPath()
   },
+  watch: {
+    $route () {
+      this.getPath()
+    }
+  },
   props: {
     collapse: Boolean
   }

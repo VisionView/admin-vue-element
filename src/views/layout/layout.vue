@@ -4,7 +4,9 @@
     <el-container>
       <el-header>
         <div class="el-icon-s-fold aside-menu" :class="Active" @click="menuClick"></div>
-        <div class="head-center"></div>
+        <div class="head-center">
+          <home-bread />
+        </div>
         <home-user class="user"/>
       </el-header>
       <el-main>
@@ -15,11 +17,13 @@
 </template>
 <script>
 import HomeAside from './components/aside'
+import HomeBread from './components/bread'
 import HomeUser from './components/user'
 export default {
   name: 'Layout',
   components: {
     HomeAside,
+    HomeBread,
     HomeUser
   },
   data () {
